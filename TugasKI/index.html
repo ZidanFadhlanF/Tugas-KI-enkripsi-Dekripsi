@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Enkripsi dan Dekripsi dengan CryptoJS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h2>Enkripsi dan Dekripsi Teks</h2>
+  
+  <label for="textToEncrypt">Teks untuk dienkripsi:</label>
+  <input type="text" id="textToEncrypt" placeholder="Masukkan teks di sini">
+  
+  <button onclick="encryptText()">Enkripsi</button>
+  <div id="encrypted" class="output"></div>
+  
+  <label for="textToDecrypt">Teks untuk didekripsi:</label>
+  <input type="text" id="textToDecrypt" placeholder="Masukkan teks enkripsi di sini">
+  
+  <button onclick="decryptText()">Dekripsi</button>
+  <div id="decrypted" class="output"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
